@@ -1,30 +1,4 @@
-let pet1 = {
-  name: "Ferrari",
-  age: 3,
-  breed: "Turtle",
-  gender: "Female",
-  service: "Shell cleaning"
-};
-
-let pet2 = {
-  name: "Lambo",
-  age: 5,
-  breed: "Turtle",
-  gender: "Male",
-  service: "Vaccination"
-};
-
-let pet3 = {
-  name: "Bugatti",
-  age: 2,
-  breed: "Turtle",
-  gender: "Male",
-  service: "Health check"
-};
-
-
-let petsList = [pet1, pet2, pet3];
-
+let petsList = [];
 
 function Pet(name, age, breed, gender, service) {
   this.name = name;
@@ -34,10 +8,8 @@ function Pet(name, age, breed, gender, service) {
   this.service = service;
 }
 
-
 const petForm = document.querySelector("form");
 const petTable = document.getElementById("registrationTable");
-
 
 function displayPets() {
   petTable.innerHTML = "";
@@ -56,12 +28,8 @@ function addRow(pet) {
     <td>${pet.gender}</td>
     <td>${pet.service}</td>
     <td>${pet.breed}</td>
-    <td>
-      <button class="delete-btn">DELETE</button>
-
-    </td>
+    <td><button class="delete-btn">DELETE</button></td>
   `;
-
 
   row.querySelector("button").addEventListener("click", function () {
     row.remove();
@@ -71,7 +39,7 @@ function addRow(pet) {
 }
 
 function registerPet(event) {
-  event.preventDefault(); 
+  event.preventDefault();
 
   const name = petForm.elements["petName"].value;
   const age = petForm.elements["petAge"].value;
@@ -86,6 +54,5 @@ function registerPet(event) {
 
   petForm.reset();
 }
-
 
 displayPets();

@@ -1,83 +1,213 @@
-body {
-    background-color: rgb(224, 224, 244);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: rgb(16, 16, 17);
-}
 
-.navbar-brand,
-.logo-img {
-    position: relative;
-    z-index: 2;
+body {
+  background-color: rgb(224, 224, 244);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(16, 16, 17);
 }
 
 
 h1, h2, h3 {
-    font-family: 'Playfair Display', serif;
+  font-family: 'Playfair Display', serif;
 }
+
+
+.navbar {
+  position: relative;
+}
+
+
+.navbar.header-bg {
+  min-height: 420px;
+
+  background-image:
+    linear-gradient(
+      rgba(255,255,255,0.1),
+      rgba(255,255,255,0.5)
+    ),
+    url("images/spa6.png");
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 20%;
+}
+
+.navbar-brand,
+.logo-img {
+  position: relative;
+  z-index: 2;
+}
+
 
 .navbar-brand {
-    color: rgb(16, 16, 17) !important;
+  color: rgb(16, 16, 17) !important;
 }
+
 
 .navbar-nav .nav-link {
-    color: rgb(16, 16, 17) !important;
-    font-size: 3.5rem !important;
-    font-weight: 900 !important;
+  color: rgb(16, 16, 17) !important;
+  font-weight: 900;
+  font-size: 1.2rem; 
 }
-
 
 .navbar-nav .nav-link.active {
-    color: rgb(16, 16, 17) !important;
-    font-weight: 500 !important;
-    text-decoration: underline;
+  text-decoration: underline;
+  font-weight: 700;
 }
-
 
 .navbar-nav .nav-link:hover {
-    color: rgb(16, 16, 17) !important;
+  color: rgb(16, 16, 17) !important;
 }
 
-.page-section {
-    background-color: rgb(224, 224, 244);
-    padding: 2rem;
-    min-height: calc(100vh - 56px);
-}
-
-
-.welcome {
-    font-size: 1.4rem;
-    font-weight: 600;
-}
 
 p {
-    font-size: 1.4rem;
-    font-weight: 700;
+  font-size: 1.1rem;
+  font-weight: 700;
+  line-height: 1.8;
+}
+
+.welcome {
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 
 
-#pets li {
-    font-size: 1.4rem;
-    font-weight: 700;
-    margin-bottom: 0.5rem;
+.logo-img {
+  max-width: 100%;
+  height: auto;
+  max-height: 260px; 
 }
+
+.home-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+
+.register-btn {
+  font-size: 3.2rem;
+  padding: 20px 20px;
+  border-radius: 12px;
+}
+
 
 .form-label {
-    font-size: 2.8rem !important;
+  font-size: 1.2rem;
 }
 
 .form-control,
 .form-select {
-    font-size: 2.8rem !important;
-    padding: 18px !important;
+  font-size: 1.1rem;
+  padding: 12px;
 }
 
 form button {
-    font-size: 2.6rem !important;
-    padding: 16px 24px !important;
+  font-size: 2rem;
+  padding: 15px 20px; 
+}
+
+
+#pets li {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
 }
 
 table th,
 table td {
-    font-size: 2.8rem !important;
-    padding: 18px !important;
+  font-size: 1.1rem;
+  padding: 12px;
 }
+
+.page-section {
+  background-color: rgb(224, 224, 244);
+  padding: 2rem;
+  min-height: calc(100vh - 56px);
+}
+
+
+@media (min-width: 992px) {
+
+  p {
+    font-size: 1.4rem;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 2.4rem;
+  }
+
+  .logo-img {
+    max-height: 520px;
+  }
+
+  .register-btn {
+    font-size: 3rem;
+    padding: 20px 30px;
+  }
+
+  .form-label,
+  .form-control,
+  .form-select,
+  table th,
+  table td {
+    font-size: 2.4rem;
+  }
+}
+
+.navbar {
+  position: relative;
+  min-height: 420px;
+
+  background-image:
+    linear-gradient(
+      rgba(255,255,255,0.1),
+      rgba(255,255,255,0.5)
+    ),
+    url("images/spa6.png");
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 20%;
+}
+p {
+  font-size: 2.1rem;
+  font-weight: 700;
+  line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+
+  .navbar.header-bg {
+    min-height: 280px;
+    background-position: center top;
+  }
+
+  .navbar-nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 1rem;
+    margin: 0.5rem;
+  }
+
+  .logo-img {
+    max-height: 180px;
+  }
+
+  p {
+    font-size: 1.1rem;
+  }
+
+  .register-btn {
+    font-size: 1.1rem;
+    padding: 10px 18px;
+  }
+
+  table {
+    width: 100%;
+  }
+}
+

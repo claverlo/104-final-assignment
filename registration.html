@@ -8,24 +8,6 @@
   <title>Registration</title>
 
   <style>
-    
- .navbar {
-  position: relative;
-  min-height: 420px;
-
-  background-image:
-    linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.5)),
-    url("images/spa6.png");
-
-  background-repeat: no-repeat;
-
-
-  background-position: center top;
-
-  background-size: cover;
-  background-position: center 20%
-}
-
     table {
       border-collapse: collapse;
       width: 70%;
@@ -42,41 +24,38 @@
       padding: 10px;
     }
 
-.delete-btn {
-  background-color: red;
-  color: white;
-  font-size: 30px;
-  padding: 15px;
-  cursor: pointer;
-}
-
+    .delete-btn {
+      background-color: red;
+      color: white;
+      font-size: 30px;
+      padding: 15px;
+      cursor: pointer;
+    }
 
     img.img-fluid {
       border-radius: 20px;
       box-shadow: 0 4px 12px rgba(187, 28, 28, 0.15);
     }
 
+    .register-btn {
+      font-size: 2.5rem;
+      padding: 20px 30px;
+    }
 
     @media (max-width: 768px) {
-
- 
       nav img {
         height: auto !important;
         max-height: 260px;
       }
 
-     
       form {
         width: 100% !important;
       }
 
-    
       table {
         width: 100%;
         font-size: 0.9rem;
       }
-
-      
     }
   </style>
 </head>
@@ -84,14 +63,11 @@
 <body>
 
 <nav class="navbar navbar-light p-0 header-bg">
-
-
-
   <div class="container-fluid justify-content-center">
     <div class="d-flex flex-column align-items-center">
 
       <a class="navbar-brand m-0 p-0" href="index.html">
-        <img src="images/logo.png" alt="Royal Paws Spa Logo" style="height: 1040px;">
+        <img src="images/logo.png" alt="Royal Paws Spa Logo" class="logo-img">
       </a>
 
       <ul class="navbar-nav flex-row fs-4 fw-bold">
@@ -99,7 +75,7 @@
           <a class="nav-link" href="index.html">Home</a>
         </li>
         <li class="nav-item mx-3">
-          <a class="nav-link"  href="about.html">About Us</a>
+          <a class="nav-link" href="about.html">About Us</a>
         </li>
         <li class="nav-item mx-3">
           <a class="nav-link active" href="registration.html">Registration</a>
@@ -113,21 +89,14 @@
   </div>
 </nav>
 
-
 <section class="container-fluid mt-5">
 
-  <h2 class="text-center mb-4">Registration</h2>
 
   <div class="row justify-content-center align-items-start">
 
-
     <div class="col-md-3 d-none d-md-flex justify-content-end">
-      <img src="images/dogbath.png"
-    alt="Dog Bath"
-    class="img-fluid"
-    style="margin-top: 10px;">
+      <img src="images/dogbath.png" alt="Dog Bath" class="img-fluid" style="margin-top: 10px;">
     </div>
-
 
     <div class="col-md-6 d-flex flex-column align-items-center">
 
@@ -160,29 +129,27 @@
         <div class="mb-3">
           <label class="form-label">Service</label>
           <select class="form-select" name="petService">
-          <option>Full Grooming</option>
-          <option>Bath & Brush</option>
-          <option>Nail Trimming</option>
-          <option>Nail Grinding</option>
-          <option>Ear Cleaning</option>
-          <option>Teeth Cleaning</option>
-          <option>Coat Trimming</option>
-          <option>Hair Styling</option>
-          <option>De-shedding Treatment</option>
-          <option>Flea & Tick Treatment</option>
-          <option>Medicated Bath</option>
-          <option>Puppy Grooming</option>
-          <option>Senior Pet Grooming</option>
-          <option>Paw Pad Trimming</option>
-          <option>Shell Cleaning</option>
-
-
+            <option>Full Grooming</option>
+            <option>Bath & Brush</option>
+            <option>Nail Trimming</option>
+            <option>Nail Grinding</option>
+            <option>Ear Cleaning</option>
+            <option>Teeth Cleaning</option>
+            <option>Coat Trimming</option>
+            <option>Hair Styling</option>
+            <option>De-shedding Treatment</option>
+            <option>Flea & Tick Treatment</option>
+            <option>Medicated Bath</option>
+            <option>Puppy Grooming</option>
+            <option>Senior Pet Grooming</option>
+            <option>Paw Pad Trimming</option>
+            <option>Shell Cleaning</option>
           </select>
         </div>
 
         <div class="d-flex justify-content-end">
-          <button class="btn btn-primary m-1" type="submit" onclick="registerPet(event)">Register</button>
-          <button class="btn btn-secondary m-1" type="reset">Reset</button>
+          <button class="btn btn-primary m-1 register-btn" type="submit" onclick="registerPet(event)">Register</button>
+          <button class="btn btn-secondary m-1 register-btn" type="reset">Reset</button>
         </div>
 
       </form>
@@ -204,10 +171,7 @@
     </div>
 
     <div class="col-md-3 d-none d-md-flex justify-content-start">
-      <img src="images/mancat.png"
-          alt="Man and Cat"
-          class="img-fluid"
-          style="margin-top: px;">
+      <img src="images/mancat.png" alt="Man and Cat" class="img-fluid">
     </div>
 
   </div>
