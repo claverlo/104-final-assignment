@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
+  <title>About Us</title>
+
+  <style>
+
+.navbar {
+  position: relative;
+  min-height: 420px;
+
+  background-image:
+    linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.5)),
+    url("images/spa6.png");
+
+  background-repeat: no-repeat;
+
+  background-position: center top;
+
+  background-size: cover;
+  background-position: center 20%
+}
+
+    body {
+      background-color: #dbdbf7;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    h1, h2, h3, .nav-link {
+      font-family: 'Playfair Display', serif;
+    }
+
+  
+    .logo-img {
+      max-height: 1040px;
+      width: auto;
+      height: auto;
+    }
+
+
+
+    .about-img {
+      width: 100%;
+      max-width: 1520px;
+      margin: auto;
+      margin-bottom: 80px;
+    }
+
+    
+
+    .about-img img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      transform: scale(2);
+      border-radius: 100%;
+      background-color: white;
+      padding: 20px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+    }
+
+
+    @media (min-width: 992px) {
+      .img-left {
+        transform: translateX(-2000px);
+      }
+
+      .img-right {
+        transform: translateX(2000px);
+      }
+    }
+
+
+    @media (max-width: 991px) {
+      .img-left,
+      .img-right {
+        transform: none;
+      }
+
+      .logo-img {
+        max-height: 560px;
+      }
+    }
+
+  
+    .about-text {
+      background: white;
+      padding: 60px;
+      border-radius: 20px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+      font-size: 1.3rem;
+      line-height: 1.8;
+      margin-top: -1000px;
+    }
+
+    
+  </style>
+</head>
+
+<body>
+
+
+<nav class="navbar navbar-light p-0 header-bg">
+
+  <div class="container-fluid justify-content-center">
+    <div class="d-flex flex-column align-items-center">
+
+      <a class="navbar-brand m-0 p-0" href="index.html">
+        <img src="images/logo.png" alt="Royal Paws Spa Logo" class="logo-img">
+      </a>
+
+      <ul class="navbar-nav flex-row fs-4 fw-bold mb-4">
+        <li class="nav-item mx-4"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item mx-4">
+          <a class="nav-link active text-decoration-underline" href="about.html">About Us</a>
+        </li>
+        <li class="nav-item mx-4"><a class="nav-link" href="registration.html">Registration</a></li>
+        <li class="nav-item mx-4"><a class="nav-link" href="#">Services</a></li>
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+<section class="container my-5">
+
+  <h1 class="text-center mb-5">About Us</h1>
+
+  <div class="row align-items-center g-5">
+
+    <div class="col-md-6 text-center">
+      <div class="about-img img-left">
+        <img src="images/bird1.png" alt="Bird">
+      </div>
+    </div>
+
+    <div class="col-md-6 text-center">
+      <div class="about-img img-right">
+        <img src="images/maledoc1.png" alt="Male Doctor">
+      </div>
+    </div>
+
+  </div>
+
+  <div class="row mt-5">
+    <div class="col-md-10 mx-auto">
+      <div class="about-text">
+
+        <p style="text-align: justify; font-size: 2.5rem;">
+
+          Pet Salon is a full-service grooming and care facility proudly serving dogs, cats,
+          and other pets of all sizes and breeds. Our professional, friendly, and highly
+          trained team provides grooming, bathing, nail clipping, ear and teeth cleaning
+          in a clean, safe environment. We focus on hygiene, comfort, patience, and
+          personalized attention, ensuring each pet’s unique needs are met. Our goal is
+          to create a calm, stress-free experience that helps pets feel healthy, relaxed,
+          confident, and genuinely happy every visit, with care, respect, trust, warmth,
+          consistency, dedication, and love.
+        </p>
+
+        <p style="text-align: center; margin-top: 40px;font-size: 2.5rem">
+          <strong>Address:</strong><br>
+          123 Main Street, San Diego, CA 92110
+        </p>
+
+        <p style="text-align: center;font-size: 2.5rem">
+          <strong>Hours of Operations:</strong><br>
+          9:00 AM – 9:00 PM<br>
+          Monday – Sunday
+        </p>
+
+      </div>
+    </div>
+  </div>
+
+</section>
+
+</body>
+</html>
